@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About - XTRA CAR</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f4f7fb;
+      color:#111;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 0;
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:800;
+    }
+
+    .nav-links{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .nav-links a:hover{
+      color:#2563eb;
+    }
+
+    /* HERO */
+
+    .hero{
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      color:white;
+      padding:90px 40px;
+      border-radius:40px;
+      text-align:center;
+      margin-top:30px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      color:#cbd5e1;
+      max-width:700px;
+      margin:auto;
+      line-height:1.9;
+      font-size:18px;
+    }
+
+    /* ABOUT */
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:50px;
+      align-items:center;
+      margin:90px 0;
+    }
+
+    .about img{
+      width:100%;
+      height:450px;
+      object-fit:cover;
+      border-radius:30px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.08);
+      transition:.4s;
+    }
+
+    .about img:hover{
+      transform:scale(1.03);
+    }
+
+    .about-text h2{
+      font-size:45px;
+      margin-bottom:25px;
+    }
+
+    .about-text p{
+      line-height:1.9;
+      color:#555;
+      margin-bottom:20px;
+      font-size:17px;
+    }
+
+    /* STATS */
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      margin-bottom:90px;
+    }
+
+    .stat{
+      background:white;
+      padding:45px;
+      text-align:center;
+      border-radius:30px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+      transition:.3s;
+    }
+
+    .stat:hover{
+      transform:translateY(-8px);
+    }
+
+    .stat h3{
+      font-size:42px;
+      color:#2563eb;
+      margin-bottom:10px;
+    }
+
+    .stat p{
+      color:#666;
+      font-weight:500;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:40px;
+      color:#777;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      .hero{
+        padding:60px 25px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .about{
+        text-align:center;
+      }
+
+      .about-text h2{
+        font-size:35px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">XTRA CAR</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <div class="hero">
+
+    <h1>About XTRA CAR</h1>
+
+    <p>
+      We deliver luxury and high-performance cars designed
+      for speed, comfort, and modern driving experiences.
+      Our passion is creating vehicles that combine power,
+      elegance, and innovation.
+    </p>
+
+  </div>
+
+  <!-- ABOUT SECTION -->
+
+  <div class="about">
+
+    <img src="images/images3.jpg" alt="Car Image">
+
+    <div class="about-text">
+
+      <h2>Built For Performance</h2>
+
+      <p>
+        XTRA CAR offers premium vehicles crafted for people
+        who love speed, style, and advanced engineering.
+        Every car is designed to provide an unforgettable
+        driving experience.
+      </p>
+
+      <p>
+        Our mission is to bring luxury and performance together
+        with modern technology and elegant design for every road.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+
+  <div class="stats">
+
+    <div class="stat">
+      <h3>10K+</h3>
+      <p>Happy Customers</p>
+    </div>
+
+    <div class="stat">
+      <h3>250+</h3>
+      <p>Luxury Cars</p>
+    </div>
+
+    <div class="stat">
+      <h3>15+</h3>
+      <p>Years Experience</p>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2025 XTRA CAR — All Rights Reserved
+  </footer>
+
+</div>
+
+</body>
+</html>
